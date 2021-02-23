@@ -1,5 +1,7 @@
 MoGo template
 
+demo-site is published at: https://apelsinu.github.io/Mogo/
+
 - Html/Css
 - Less
 
