@@ -1,0 +1,76 @@
+// compress: false, sourceMap: true
+
+@import "vars";
+@import "mixins";
+
+/* Fonts
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+*/
+
+html,body{
+overflow-x: hidden
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+
+    font-size: 14px;
+    color: @primary;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+*,
+*:before,
+*:active {
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+
+    max-width: 1230px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.container--intro {
+    display: flex;
+    height: 100%;
+}
+
+/* Blocks */
+
+@import "code-reuse/section";
+@import "code-reuse/photos";
+
+@import "blocks/intro";
+@import "blocks/header";
+@import "blocks/about";
+@import "blocks/statistic";
+@import "blocks/services";
+@import "blocks/design";
+@import "blocks/wedo";
+@import "blocks/reviews";
+@import "blocks/team";
+@import "blocks/companies";
+@import "blocks/works";
+@import "blocks/clients";
+@import "blocks/blog";
+@import "blocks/map";
+@import "blocks/footer";
+
+@import "media";
+
+
+
+
+
+
+

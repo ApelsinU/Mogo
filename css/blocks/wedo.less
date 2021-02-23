@@ -1,0 +1,87 @@
+// main: ../style.less
+
+.wedo {
+    padding: 45px 0;
+
+}
+
+.wedo__inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.wedo__item {
+    width: 49%;
+}
+
+.wedo__img {
+    width: 100%;
+    height: auto;
+}
+
+.accordeon__card {
+    border: 1px solid #e5e5e5;
+
+    margin-bottom: 10px;
+}
+
+.accordeon__card:last-child {
+    margin-bottom: 0;
+}
+
+.accordeon__card.active .accordeon__content {
+    display: block;
+}
+
+.accordeon__header {
+    display: flex;
+
+    padding: 15px;
+    border-bottom: 1px solid #e5e5e5;
+
+    align-items: center;
+
+    position: relative;
+}
+
+.accordeon__icon {
+    padding-right: 12px;
+}
+
+.accordeon__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: @primary;
+    text-transform: uppercase;
+}
+
+.accordeon__btn {
+    position: absolute;
+    top: 23px;
+    right: 15px;
+    z-index: 1;
+
+    padding: 5px;
+
+    cursor: pointer;
+}
+
+.accordeon__content {
+    display: none;
+
+    padding: 18px;
+}
+
+.accordeon__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: @secondary;
+}
+
+
+
+

@@ -1,0 +1,61 @@
+// main: ../style.less
+
+.clients {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.clients__item {
+    width: 50%;
+    padding: 30px 40px;
+
+    position: relative;
+}
+
+.clients__photo {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    z-index: 1;
+}
+
+.clients__photo img {
+    border: 0 solid #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.clients__content {
+    padding-left: 140px;
+}
+
+.clients__title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @primary;
+
+    margin-bottom: 3px;
+}
+
+.clients__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: @primary;
+
+    line-height: 1.6;
+}
+
+.clients__subtitle:after {
+    .mixin--line(#f38181, 0);
+    margin: 12px 0 20px;
+}
+
+.clients__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    color: @secondary;
+}

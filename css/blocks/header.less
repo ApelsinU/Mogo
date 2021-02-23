@@ -1,0 +1,99 @@
+// main: ../style.less
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+
+    width: 100%;
+    padding-top: 20px;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+}
+
+.nav {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    display: block;
+}
+
+.nav__item {
+    display: inline-block;
+
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+
+    position: relative;
+
+    transition: color .1s linear;
+}
+
+.nav__item:after {
+    content: "";
+
+    display: block;
+    width: 100%;
+    height: 3px;
+
+    background-color: #fce38a;
+    opacity: 0;
+
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+
+    transition: opacity .1s linear;
+}
+
+.nav__item:hover,
+.nav__item.active{
+    color: #fce38a;
+}
+
+.nav__item:hover:after,
+.nav__item.active:after {
+    opacity: 1;
+}
+
+.nav__item:nth-child(6):hover:after,
+:nth-child(7):hover:after,
+.nav__item.active:nth-child(7):after,
+:nth-child(7):after {
+    opacity: 0;
+}
+
+.burger {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

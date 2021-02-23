@@ -1,0 +1,85 @@
+// main: ../style.less
+
+.works {
+    padding-top: 50px;
+}
+
+.works__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.works__item {
+    width: 25%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.works__image {
+    line-height: 0;
+    background: @gradient;
+
+    position: relative;
+}
+
+.works__photo {
+    width: 100%;
+    height: auto;
+
+    cursor: pointer;
+
+    transition: opacity .1s linear;
+}
+
+.works__image:hover .works__photo {
+    opacity: 0.1;
+}
+
+.works__content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+
+    display: none;
+
+    color: #fff;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.works__image:hover .works__content   {
+    display: block;
+}
+
+.works__title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    margin: 5px 0;
+}
+
+.works__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

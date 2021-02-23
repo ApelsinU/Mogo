@@ -1,0 +1,60 @@
+// main: style.less
+
+.mixin--line(@bg, @mTop) {
+    content: "";
+
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: @bg;
+
+    margin: @mTop auto 50px;
+}
+
+.mixin--arrowbtn(@dir) {
+    display: block;
+    width: 15px;
+    height: 15px;
+
+    border-top: 3px solid #cccccc;
+    border-right: 3px solid #cccccc;
+
+    & when(@dir = top)  {
+        transform: rotate(-45deg);
+    }
+    & when(@dir = bottom)  {
+        transform: rotate(135deg) translate(0, 10px);
+    }
+    & when(@dir = right)  {
+        transform: rotate(45deg);
+    }
+    & when(@dir = left)  {
+        transform: rotate(-135deg);
+    }
+}
+
+.arrow--right {
+    .mixin--arrowbtn(right);
+}
+.arrow--left {
+    .mixin--arrowbtn(left);
+}
+.arrow--top {
+    .mixin--arrowbtn(top);
+}
+.arrow--bottom {
+    .mixin--arrowbtn(bottom);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

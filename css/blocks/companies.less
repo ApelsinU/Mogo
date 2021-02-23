@@ -1,0 +1,29 @@
+// main: ../style.less
+
+.companies {
+    background-color: #f8f8f8;
+}
+
+.companies__inner {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 60px 0;
+}
+
+.companies__item {
+    width: 140px;
+    height: 140px;
+    position: relative;
+}
+
+.companies__item img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+}
+

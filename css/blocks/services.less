@@ -1,0 +1,49 @@
+// main: ../style.less
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.services__card {
+    width: 30%;
+   // height: 80px;
+    margin-bottom: 45px;
+
+    position: relative;
+}
+
+.services__card--border {
+    padding-bottom: 45px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+.card__icon {
+    position: absolute;
+    top: 5px;
+    left: 0;
+    z-index: 1;
+}
+
+.card__content {
+    padding-left: 60px;
+}
+
+.services__title {
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: @primary;
+
+    margin-bottom: 10px;
+}
+
+.services__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: @secondary;
+
+    line-height: 1.6;
+}

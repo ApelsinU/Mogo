@@ -1,0 +1,309 @@
+// main: ../style.less
+
+
+.footer {
+    padding-top: 70px;
+}
+
+.footer__blocks {
+    display: flex;
+
+    padding-bottom: 35px;
+}
+
+.footer__mogo {
+    width: 42.5%;
+    padding-right: 45px;
+}
+
+.footer__blogs {
+    width: 35%;
+
+    padding-right: 60px;
+}
+
+.footer__instagram {
+    width: 22.5%;
+}
+
+.footer__mogo {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Mogo */
+//=====================================
+
+.mogo__title {
+    font-size: 46px;
+    font-weight: 700;
+    color: #ccc;
+}
+
+.mogo__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: @secondary;
+
+    margin: 15px 0 40px;
+}
+
+.mogo__social {
+    display: flex;
+    flex-direction: column;
+}
+
+.social__title {
+    color: @primary;
+
+    font-size: 14px;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+.social__title--bold {
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.social__content {
+    display: flex;
+    flex-direction: row;
+
+    border-top: 1px solid #e5e5e5;
+    padding: 10px 0;
+}
+
+.social__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: @secondary;
+}
+
+.social__icons {
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.social__icons i {
+    color: #95e1d3;
+    font-size: 18px;
+    margin-left: 15px;
+
+    transition: transform .1s linear;
+}
+
+.social__icons i:hover {
+    transform: scale(1.4);
+}
+
+.subscribe {
+    display: flex;
+
+    width: 100%;
+    max-width: 380px;
+    margin-top: 25px;
+}
+
+.subscribe__input {
+    width: 60%;
+    height: 40px;
+
+    background: #fff;
+    border: 1px solid #e7e7e7;
+    border-right: 0;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: @primary;
+    line-height: 1.1;
+
+    padding: 12px;
+}
+
+.subscribe__input::placeholder {
+    color: #ccc;
+}
+
+.subscribe__input:focus {
+    outline: 0;
+    border-color: #95e1d3;
+}
+
+.subscribe__button {
+    width: 40%;
+    height: 40px;
+    padding: 12px 32px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 1.1;
+
+    background: #95e1d3;
+    border: 0;
+    border-radius: 0;
+
+    cursor: pointer;
+
+    transition: background .2s linear;
+}
+
+.subscribe__button:hover {
+    background: #47b4a0;
+}
+
+.subscribe__button:focus {
+    outline: 0;
+}
+
+
+
+/* Blogs */
+//=====================================
+
+.blogs__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: @primary;
+    text-transform: uppercase;
+
+    margin: 15px 0 35px;
+}
+
+.blogs__inner {
+    display: flex;
+    flex-direction: column;
+}
+
+.blogs__card {
+    display: flex;
+    flex-direction: row;
+
+    margin-bottom: 30px;
+
+    align-items: center;
+}
+
+.blogs__photo {
+    margin: 0;
+}
+
+.blogs__photo img {
+    display: block;
+}
+
+.blogs__content {
+    margin-left: 15px;
+}
+
+.blogs__text {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: @primary;
+    line-height: 1.5;
+}
+
+.blogs__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.blogs__link:hover {
+    text-decoration: underline;
+}
+
+.blogs__date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: @secondary;
+}
+
+/* Instagram */
+//=====================================
+
+.instagram__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: @primary;
+    text-transform: uppercase;
+
+    margin: 15px 0 35px;
+}
+
+.instagram__photos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.instagram__photos img {
+    display: block;
+    margin: 1px;
+
+    cursor: pointer;
+
+    transition: transform .1s linear;
+
+}
+.instagram__photos img:hover {
+    transform: scale(1.1);
+}
+
+.instagram__text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 300;
+    font-style: italic;
+    color: @secondary;
+
+    margin-top: 20px;
+}
+
+/* Copyrights */
+//=====================================
+
+.footer__copyrights {
+    padding: 20px 0;
+    text-align: center;
+
+    border-top: 1px solid #e5e5e5;
+}
+
+.copyrights__text {
+    font-size: 14px;
+    color: @primary;
+}
+
+.copyrights__text--red {
+    color: #f38181;
+    text-decoration: none;
+}
+
+.copyrights__text--red:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

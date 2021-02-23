@@ -1,0 +1,166 @@
+// main: ../style.less
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    padding: 40px 0 20px;
+    margin: 0 -15px;
+}
+
+.photos__card {
+    text-align: center;
+
+    padding: 0 15px;
+    width: 33.33333%;
+}
+
+.photos__item {
+    max-width: 380px;
+    width: 100%;
+    background: #95e1d3;
+
+    transition: opacity .1s linear;
+
+    position: relative;
+}
+
+.photos__item--team {
+  //  max-height: 470px;
+    height: auto;
+}
+
+.photos__item:hover .photos__img {
+    transform: translate(-10px, -10px);
+}
+
+.photos__item:hover .photos__img img {
+    opacity: .1;
+    cursor: pointer;
+}
+
+.photos__item:hover .photos__content {
+    opacity: 1;
+}
+
+.photos__img {
+    background: @gradient;
+
+    transition: transform .2s linear;
+}
+
+.photos__img img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+.photos__content {
+    display: flex;
+    flex-direction: column;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+
+    opacity: 0;
+    transition: opacity .1s linear;
+
+    align-items: center;
+}
+
+.photos__content--team {
+    flex-direction: row;
+}
+
+.photos__icon {
+
+}
+
+.photos__icon--team {
+    width: 56px;
+    height: 56px;
+
+    border-right: 1px solid #f9bd87;
+    background-color: #fce38a;
+    color: #f38181;
+
+    position: relative;
+
+    transition: background .1s linear, color .1s linear;
+}
+
+.photos__icon--team i{
+    font-size: 23px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+
+    transform: translate(-50%, -50%);
+}
+
+.photos__icon--team:last-child {
+    border: none;
+}
+
+.photos__icon--team:hover {
+    background-color: #f38181;
+    color: #fff;
+}
+
+.photos__icon--team:hover img {
+    color: #fff;
+}
+
+.photos__text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.photos__title {
+    font-size: 14px;
+    font-weight: 400;
+    color: @primary;
+
+    text-transform: uppercase;
+
+    margin-top: 30px;
+}
+
+.photos__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: 300;
+    font-style: italic;
+    color: @secondary;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
